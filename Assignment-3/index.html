@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Heron's Formula</h2>
+            <form>
+                <label for="side-a">Side a:</label>
+                <input type="text" id="side-a" placeholder="Enter side a">
+                <label for="side-b">Side b:</label>
+                <input type="text" id="side-b" placeholder="Enter side b">
+                <label for="side-c">Side c:</label>
+                <input type="text" id="side-c" placeholder="Enter side c">
+                <label for="heron-result">Area (Result):</label>
+                <input type="text" id="heron-result" readonly>
+                <button type="button" onClick="HeronFormula()">Calculate</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Ambiguous Case</h2>
+            <form>
+                <label for="angle-a">Angle A:</label>
+                <input type="text" id="angle-a" placeholder="Enter angle A">
+                <label for="side-a">Side a:</label>
+                <input type="text" id="amb-side-a" placeholder="Enter side a">
+                <label for="side-b">Side b:</label>
+                <input type="text" id="amb-side-b" placeholder="Enter side b">
+                <label for="triangle-type">Triangle Type (Result):</label>
+                <input type="text" id="triangle-type" readonly>
+                <button type="button" onClick="AmbigousCase()">Calculate</button> 
+            </form>
+        </div>
+        <div class="card">
+            <h2>Newton's Method</h2>
+            <form>
+                <label for="root-guess">Root Guess:</label>
+                <input type="text" id="root-guess" placeholder="Enter root guess">
+                <label for="newton-result">Root Approximation (Result):</label>
+                <input type="text" id="newton-result" readonly>
+                <button type="button" onClick = "NewtonsMethod()">Calculate</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Polynomial Function</h2>
+            <form>
+                <label for="coefficients">Coefficients:</label>
+                <input type="text" id="coefficients" placeholder="Enter coefficients">
+                <label for="exponents">Exponents:</label>
+                <input type="text" id="exponents" placeholder="Enter exponents">
+                <label for="x-value">x Value:</label>
+                <input type="text" id="x-value" placeholder="Enter x value">
+                <label for="poly-function-result">Polynomial Function (Result):</label>
+                <input type="text" id="poly-function-result" readonly>
+                <label for="poly-eval-result">Polynomial Evaluation (Result):</label>
+                <input type="text" id="poly-eval-result" readonly>
+                <button type="button" onClick = "PolynomialFunction()">Calculate</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
